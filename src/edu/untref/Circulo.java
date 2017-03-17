@@ -15,7 +15,7 @@ public class Circulo {
 	}
 
 	public boolean intersectaCon(Circulo that) {
-		return ((this.radio + that.radio) > this.centro.distanciaCon(that.centro));
+		return this.centro.distanciaCon(that.centro) <= (this.radio + that.radio);
 	}
 
 }
